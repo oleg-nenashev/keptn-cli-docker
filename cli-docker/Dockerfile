@@ -11,4 +11,8 @@ RUN mv keptn-${CLI_VERSION}-${CLI_DISTRO} /usr/local/bin/keptn
 RUN rm -rf keptn-${CLI_VERSION}-${CLI_DISTRO}.tar.gz
 RUN keptn version
 
-ENTRYPOINT ["/usr/local/bin/keptn"]
+ADD launcher.sh /usr/local/bin/keptn-launcher.sh
+RUN mv /usr/local/bin/keptn-launcher.sh /usr/local/bin/keptn-launcher
+RUN chmod +x /usr/local/bin/keptn-launcher
+
+ENTRYPOINT ["sh", "-e", "/usr/local/bin/keptn-launcher"]
