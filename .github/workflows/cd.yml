@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: keptn-cli
+  IMAGE_NAME: "oleg-nenashev/keptn-cli"
 
 jobs:
   build-and-push-image:
