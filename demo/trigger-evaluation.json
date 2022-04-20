@@ -1,0 +1,35 @@
+{
+    "specversion": "1.0",
+    "id": "c4d3a334-6cb9-4e8c-a372-7e0b45942f53",
+    "source": "source-service",
+    "type": "sh.keptn.event.evaluation.triggered",
+    "datacontenttype": "application/json",
+    "data": {
+      "project": "sockshop",
+      "stage": "dev",
+      "service": "carts",
+      "labels": {
+        "label-key": "label-value"
+      },
+      "status": "succeeded",
+      "result": "pass",
+      "message": "a message",
+      "test": {
+        "start": "2019-10-20T06:57:27.152330783Z",
+        "end": "2019-10-20T07:57:27.152330783Z"
+      },
+      "evaluation": {
+        "start": "2019-10-20T07:57:27.152330783Z",
+        "end": "2019-10-20T08:57:27.152330783Z",
+        "timeframe": "10m"
+      },
+      "deployment": {
+        "deploymentNames": [
+          "deployment-1"
+        ]
+      }
+    },
+    "shkeptncontext": "a3e5f16d-8888-4720-82c7-6995062905c1",
+    "gitcommitid": "521747298a3790fde1710f3aa2d03b55020575aa"
+  }
+  
