@@ -10,7 +10,7 @@ After that, the command and its arguments should be passed.
 Interactive mode is not supported at the moment.
 
 ```sh
-docker run --rm keptn/cli:0.14.1 ${KEPTN_API_URL} ${KEPTN_API_TOKEN} COMMAND COMMAND_ARGS
+docker run --rm ghcr.io/oleg-nenashev/keptn-cli:latest ${KEPTN_API_URL} ${KEPTN_API_TOKEN} COMMAND COMMAND_ARGS
 ```
 
 ### Send Cloud Event
@@ -20,6 +20,6 @@ JSON file is mapped to the Docker container via the Docker volume.
 
 ```sh
 docker run --rm -v /data/event.json:$(pwd)/demo/trigger-evaluation.json:ro \
-    keptn/cli:0.14.1 ${KEPTN_API_URL} ${KEPTN_API_TOKEN} \
+    ghcr.io/oleg-nenashev/keptn-cli:latest ${KEPTN_API_URL} ${KEPTN_API_TOKEN} \
     send event --file=/data/event.json
 ```
